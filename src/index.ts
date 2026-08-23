@@ -1,3 +1,8 @@
+export {
+  enquirySubjects,
+  enquiryStatuses,
+} from "./enquiries.js";
+
 export type {
   CreateEnquiryRequest,
   CreateEnquiryResponse,
@@ -5,5 +10,6 @@ export type {
   EnquiryListResponse,
   EnquiryResponse,
   EnquiryStatus,
+  EnquirySubject,
   UpdateEnquiryRequest,
 } from "./enquiries.js";
