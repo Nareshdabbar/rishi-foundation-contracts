@@ -15,7 +15,8 @@ export type StudentRegistrationRequest = {
   fatherName?: string;
   motherName?: string;
   guardianName?: string;
-  parentPhone?: string;
+
+  parentPhone: string;
   alternatePhone?: string;
   parentEmail?: string;
 
@@ -23,6 +24,7 @@ export type StudentRegistrationRequest = {
   district: string;
   mandal: string;
   villageTown: string;
+  pincode: string;
 
   schoolName: string;
   schoolType: string;

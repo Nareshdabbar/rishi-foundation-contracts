@@ -9,13 +9,14 @@ export type StudentRegistrationRequest = {
     fatherName?: string;
     motherName?: string;
     guardianName?: string;
-    parentPhone?: string;
+    parentPhone: string;
     alternatePhone?: string;
     parentEmail?: string;
     state: string;
     district: string;
     mandal: string;
     villageTown: string;
+    pincode: string;
     schoolName: string;
     schoolType: string;
     currentClass: string;
