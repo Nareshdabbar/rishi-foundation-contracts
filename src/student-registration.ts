@@ -11,12 +11,12 @@ export type StudentRegistrationRequest = {
   gender: string;
 
   teacherName?: string;
+  teacherPhone?: string;
 
   fatherName?: string;
   motherName?: string;
   guardianName?: string;
-
-  parentPhone: string;
+  parentPhone?: string;
   alternatePhone?: string;
   parentEmail?: string;
 
@@ -30,6 +30,8 @@ export type StudentRegistrationRequest = {
   schoolType: string;
   currentClass: string;
   academicYear: string;
+
+  note?: string;
 };
 
 export type StudentRegistrationResponse = {

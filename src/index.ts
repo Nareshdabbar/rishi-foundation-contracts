@@ -15,7 +15,6 @@ export type {
   UpdateEnquiryRequest,
 } from "./enquiries.js";
 
-
 export type {
   StudentRegistrationType,
   StudentRegistrationRequest,
