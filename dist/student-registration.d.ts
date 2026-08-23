@@ -6,10 +6,11 @@ export type StudentRegistrationRequest = {
     dateOfBirth: string;
     gender: string;
     teacherName?: string;
+    teacherPhone?: string;
     fatherName?: string;
     motherName?: string;
     guardianName?: string;
-    parentPhone: string;
+    parentPhone?: string;
     alternatePhone?: string;
     parentEmail?: string;
     state: string;
@@ -21,6 +22,7 @@ export type StudentRegistrationRequest = {
     schoolType: string;
     currentClass: string;
     academicYear: string;
+    note?: string;
 };
 export type StudentRegistrationResponse = {
     success: boolean;
