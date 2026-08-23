@@ -3,6 +3,7 @@ export {
   enquiryStatuses,
 } from "./enquiries.js";
 
+
 export type {
   CreateEnquiryRequest,
   CreateEnquiryResponse,
@@ -13,3 +14,10 @@ export type {
   EnquirySubject,
   UpdateEnquiryRequest,
 } from "./enquiries.js";
+
+
+export type {
+  StudentRegistrationType,
+  StudentRegistrationRequest,
+  StudentRegistrationResponse,
+} from "./student-registration.js";
