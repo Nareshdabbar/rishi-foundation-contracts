@@ -20,3 +20,13 @@ export type {
   StudentRegistrationRequest,
   StudentRegistrationResponse,
 } from "./student-registration.js";
+
+
+///
+export type {
+  LoginRequest,
+  LoginResponse,
+  MeResponse,
+  AuthenticatedUser,
+  AuthRole,
+} from "./auth.js";
