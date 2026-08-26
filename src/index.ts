@@ -18,7 +18,14 @@ export type {
 export type {
   StudentRegistrationType,
   StudentRegistrationRequest,
+  StudentRegistration,
   StudentRegistrationResponse,
+  StudentRegistrationListResponse,
+  StudentRegistrationDetailResponse,
+  UpdateStudentRegistrationRequest,
+  UpdateStudentRegistrationResponse,
+  DeleteStudentRegistrationResponse,
+  StudentRegistrationCountResponse,
 } from "./student-registration.js";
 
 
