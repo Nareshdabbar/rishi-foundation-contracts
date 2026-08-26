@@ -40,8 +40,6 @@ export type StudentRegistrationRequest = {
 
 /**
  * Complete registration record returned by the API.
- *
- * Nullable fields represent database columns that may contain null.
  */
 export type StudentRegistration = {
   id: string;
@@ -88,67 +86,85 @@ export type UpdateStudentRegistrationRequest =
   StudentRegistrationRequest;
 
 /**
+ * Common API error response.
+ */
+export type StudentRegistrationErrorResponse = {
+  success: false;
+  message: string;
+  errors?: {
+    field: string;
+    message: string;
+  }[];
+};
+
+/**
  * Create registration response.
  */
-export type StudentRegistrationResponse = {
-  success: boolean;
-
-  data: {
-    id: string;
-  };
-
-  message?: string;
-};
+export type StudentRegistrationResponse =
+  | {
+      success: true;
+      data: {
+        id: string;
+      };
+      message?: string;
+    }
+  | StudentRegistrationErrorResponse;
 
 /**
  * Get all registrations response.
  */
-export type StudentRegistrationListResponse = {
-  success: boolean;
-  data: StudentRegistration[];
-  message?: string;
-};
+export type StudentRegistrationListResponse =
+  | {
+      success: true;
+      data: StudentRegistration[];
+      message?: string;
+    }
+  | StudentRegistrationErrorResponse;
 
 /**
  * Get a single registration response.
  */
-export type StudentRegistrationDetailResponse = {
-  success: boolean;
-  data: StudentRegistration;
-  message?: string;
-};
+export type StudentRegistrationDetailResponse =
+  | {
+      success: true;
+      data: StudentRegistration;
+      message?: string;
+    }
+  | StudentRegistrationErrorResponse;
 
 /**
  * Update registration response.
  */
-export type UpdateStudentRegistrationResponse = {
-  success: boolean;
-  data: StudentRegistration;
-  message?: string;
-};
+export type UpdateStudentRegistrationResponse =
+  | {
+      success: true;
+      data: StudentRegistration;
+      message?: string;
+    }
+  | StudentRegistrationErrorResponse;
 
 /**
  * Delete registration response.
  */
-export type DeleteStudentRegistrationResponse = {
-  success: boolean;
-
-  data: {
-    id: string;
-  };
-
-  message?: string;
-};
+export type DeleteStudentRegistrationResponse =
+  | {
+      success: true;
+      data: {
+        id: string;
+      };
+      message?: string;
+    }
+  | StudentRegistrationErrorResponse;
 
 /**
  * Registration count response.
  */
-export type StudentRegistrationCountResponse = {
-  success: boolean;
-
-  data: {
-    count: number;
-  };
-
-  message?: string;
-};
+export type StudentRegistrationCountResponse =
+  | {
+      success: true;
+      data: {
+        count: number;
+      };
+      message?: string;
+    }
+  | StudentRegistrationErrorResponse;
